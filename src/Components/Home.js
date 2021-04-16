@@ -77,7 +77,7 @@ class Home extends Component {
                       Launching Site
                       <br />
                       <br />
-                      Site_ID : {item.launch_site.site_id}
+                      Site_id : {item.launch_site.site_id}
                       <br />
                       Site_Name : {item.launch_site.site_name}
                       <br />
