@@ -24,6 +24,10 @@ React.JS has been used to serve the frontend for the portal which runs on http:/
 create-react-app has been used for initialising the react app
 fetch method  is used to call api  over proxy server
 
+![Screenshot (206)](https://user-images.githubusercontent.com/44099058/115001521-582aaa80-9ec1-11eb-8033-86e1c7a16dc4.png)
+![Screenshot (207)](https://user-images.githubusercontent.com/44099058/115001537-5c56c800-9ec1-11eb-8b16-8523f4900747.png)
+
+
 
 
 
