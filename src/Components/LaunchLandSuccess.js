@@ -33,7 +33,7 @@ class LaunchLandSuccess extends Component {
         }}
       >
         <h1 style={{ marginLeft: "30%", color: "skyblue" }}>
-          Space - X Success Launches & Lands
+          Space - X Successful Launch & Lands
         </h1>
 
         <ul>

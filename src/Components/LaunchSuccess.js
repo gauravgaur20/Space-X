@@ -35,7 +35,7 @@ class LaunchLandSuccess extends Component {
     return (
       <div style={{ backgroundAttachment: "fixed",
         backgroundPosition: "center",backgroundSize:"cover",backgroundImage: `url(${car1})` }}>
-        <h1 style={{ marginLeft: "30%", color: "skyblue" }}>Space - X Success Launches</h1>
+        <h1 style={{ marginLeft: "30%", color: "skyblue" }}>Space - X Successful Launches</h1>
 
         <ul>
           {this.state.items.map((item) => (
