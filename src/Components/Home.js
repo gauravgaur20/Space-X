@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import car from "../images/wp2284535-spacex-wallpapers.jpg";
 
+
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -29,34 +31,37 @@ class Home extends Component {
   
   render() {
     return (
-      <div style={{ backgroundImage: `url(${car})` }}>
+      <div style={{ backgroundAttachment: "fixed",
+        backgroundPosition: "center",backgroundSize:"cover",backgroundImage: `url(${car})` }}>
         <h1 style={{ marginLeft: "40%", color: "skyblue" }}>Space - X</h1>
 
         <ul>
           {this.state.items.map((item) => (
             <li key={item.flight_number}>
               <div
-                className="card"
+                className="cardr"
                 style={{
                   align: "center",
                   marginTop: "15px",
                   marginLeft: "50px",
-                  marginRight: "10px",
+                  marginRight: "60px",
+                  border:"1px solid white",
+                  marginBottom:"20px"
                 }}
               >
                 <div
                   className="card-header"
-                  style={{ backgroundColor: "lightblue" }}
+                  style={{border:"1px solid"}}
                 >
                   {" "}
-                  <span style={{ paddingRight: "10px" }}>
+                  <span style={{ color:"white",paddingRight: "10px" }}>
                     {item.flight_number}{" "}
                   </span>
-                  <span>{item.mission_name}</span>
+                  <span style={{color:"white"}}>{item.mission_name}</span>
                 </div>
                 <div
                   className="card-body"
-                  style={{ backgroundColor: "black", textcolor: "white" }}
+                  style={{ }}
                 >
                   <h5
                     className="card-title"
