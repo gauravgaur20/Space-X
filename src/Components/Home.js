@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import car from "../images/wp2284535-spacex-wallpapers.jpg";
 
-
-
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -11,8 +9,6 @@ class Home extends Component {
       issuccess: "fail",
     };
   }
-
-
 
   componentDidMount() {
     fetch("https://api.spaceXdata.com/v3/launches?limit=100")
@@ -25,14 +21,16 @@ class Home extends Component {
     console.log(this.items);
   }
 
-
-
-
-  
   render() {
     return (
-      <div style={{ backgroundAttachment: "fixed",
-        backgroundPosition: "center",backgroundSize:"cover",backgroundImage: `url(${car})` }}>
+      <div
+        style={{
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundImage: `url(${car})`,
+        }}
+      >
         <h1 style={{ marginLeft: "40%", color: "skyblue" }}>Space - X</h1>
 
         <ul>
@@ -45,24 +43,18 @@ class Home extends Component {
                   marginTop: "15px",
                   marginLeft: "50px",
                   marginRight: "60px",
-                  border:"1px solid white",
-                  marginBottom:"20px"
+                  border: "1px solid white",
+                  marginBottom: "20px",
                 }}
               >
-                <div
-                  className="card-header"
-                  style={{border:"1px solid"}}
-                >
+                <div className="card-header" style={{ border: "1px solid" }}>
                   {" "}
-                  <span style={{ color:"white",paddingRight: "10px" }}>
+                  <span style={{ color: "white", paddingRight: "10px" }}>
                     {item.flight_number}{" "}
                   </span>
-                  <span style={{color:"white"}}>{item.mission_name}</span>
+                  <span style={{ color: "white" }}>{item.mission_name}</span>
                 </div>
-                <div
-                  className="card-body"
-                  style={{ }}
-                >
+                <div className="card-body" style={{}}>
                   <h5
                     className="card-title"
                     style={{ textcolor: "white", color: "white" }}
